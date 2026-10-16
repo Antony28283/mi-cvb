@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2b2b2b;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.cv-card {
+    position: relative;
+    width: 750px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* Franja Azul Superior */
+.top-header {
+    background-color: #1a4b70;
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.top-header h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Foto de Perfil Redonda */
+.photo-container {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 10;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Cuerpo del CV */
+.cv-body {
+    display: flex;
+    min-height: 800px;
+}
+
+/* Columna Izquierda (Gris) */
+.left-col {
+    width: 38%;
+    background-color: #e5e9ec;
+    padding: 100px 25px 30px 25px;
+    color: #2c3e50;
+}
+
+.left-col .sec {
+    margin-bottom: 25px;
+}
+
+.left-col h3 {
+    font-size: 0.95rem;
+    color: #1a4b70;
+    margin-bottom: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.left-col p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    color: #333333;
+}
+
+.phone {
+    font-weight: bold;
+}
+
+.lang-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.lang-row .level {
+    color: #666;
+}
+
+/* Columna Derecha (Blanca) */
+.right-col {
+    width: 62%;
+    background-color: #ffffff;
+    padding: 40px 35px 30px 35px;
+}
+
+.sec-right {
+    margin-bottom: 25px;
+}
+
+.sec-right h2 {
+    font-size: 1.05rem;
+    color: #1a4b70;
+    margin-bottom: 8px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.sec-right p {
+    font-size: 0.82rem;
+    color: #444444;
+    line-height: 1.4;
+}
+
+.item-title {
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.item-date {
+    color: #777777;
+    font-size: 0.78rem !important;
+    margin-bottom: 8px;
+}
+
+/* Barras de Herramientas */
+.skill-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.bar {
+    width: 140px;
+    height: 10px;
+    background-color: #dcdcdc;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background-color: #1a4b70;
+}
+
+.f80 { width: 85%; }
+.f60 { width: 65%; }
+.f40 { width: 45%; }
